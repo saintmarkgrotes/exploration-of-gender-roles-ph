@@ -15,6 +15,7 @@ export default function Homepage() {
             <li>Loui Jay Legatuna</li>
             <li>Arvin Clark Mediante</li>
             <li>Stephanie Nabor</li>
+            <li>Lee Conarco</li>
           </ul>
         </div>
 
