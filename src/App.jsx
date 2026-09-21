@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import Sidebar from './sidebar'
 import Homepage from './Homepage'
 import UnderstandingGenderRoles from './UnderstandingGenderRoles'
-import Sidebar from './sidebar'
+import HistoricalPerspective from './HistoricalPerspective'
+import ContemporaryGenderRoles from './ContemporaryGenderRoles'
+import GenderIssues from './GenderIssues'
+import AnalysisReflection from './AnalysisReflection'
+import Multimedia from './Multimedia'
+import Conclusion from './Conclusion'
+import References from './References'
 
 function App() {
   const [activePage, setActivePage] = useState('Homepage')
@@ -13,9 +20,21 @@ function App() {
       case 'UnderstandingGenderRoles':
         return <UnderstandingGenderRoles />
       case 'HistoricalPerspective':
-        return <div><h2>3. Historical Perspective</h2><p>sino mag butang sa sulod?</p></div>
+        return <HistoricalPerspective />
+      case 'ContemporaryGenderRoles':
+        return <ContemporaryGenderRoles />
+      case 'GenderIssues':
+        return <GenderIssues />
+      case 'AnalysisReflection':
+        return <AnalysisReflection />
+      case 'Multimedia':
+        return <Multimedia />
+      case 'Conclusion':
+        return <Conclusion />
+      case 'References':
+        return <References />
       default:
-        return <div><h2>Work in Progress</h2><p>waray pa</p></div>
+        return <div><h2>Page Not Found</h2></div>
     }
   }
 
