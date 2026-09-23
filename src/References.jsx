@@ -1,8 +1,17 @@
-export default function References() {
+import PageLayout from "./PageLayout";
+
+export default function References({ setActivePage }) {
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h2>9. References</h2>
-      <p>List your sources here...</p>
-    </div>
+    <PageLayout
+      index={8}
+      kicker="Section 9"
+      lede="All sources used, properly acknowledged."
+      setActivePage={setActivePage}
+    >
+      <ol className="refs">
+        <li>Add books, journal articles, and government sources here.</li>
+        <li>Add credible websites, images, and videos with proper attribution.</li>
+      </ol>
+    </PageLayout>
   );
 }

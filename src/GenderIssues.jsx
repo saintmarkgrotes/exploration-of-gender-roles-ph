@@ -1,8 +1,21 @@
-export default function GenderIssues() {
+import PageLayout from "./PageLayout";
+
+export default function GenderIssues({ setActivePage }) {
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h2>5. Gender Issues and Realities</h2>
-      <p>Content for Gender Issues goes here...</p>
-    </div>
+    <PageLayout
+      index={4}
+      kicker="Section 5"
+      lede="Ongoing challenges and inequalities within the Philippine context."
+      setActivePage={setActivePage}
+    >
+      <ul className="req">
+        <li>Gender stereotypes</li>
+        <li>Gender discrimination</li>
+        <li>Equal opportunities</li>
+        <li>Representation in media</li>
+        <li>Gender-based inequalities</li>
+      </ul>
+      <p>Present each issue with respectful, evidence-based discussion and credible sources.</p>
+    </PageLayout>
   );
 }
