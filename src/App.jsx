@@ -1,52 +1,38 @@
-import { useState } from 'react'
-import Sidebar from './sidebar'
-import Homepage from './Homepage'
-import UnderstandingGenderRoles from './UnderstandingGenderRoles'
-import HistoricalPerspective from './HistoricalPerspective'
-import ContemporaryGenderRoles from './ContemporaryGenderRoles'
-import GenderIssues from './GenderIssues'
-import AnalysisReflection from './AnalysisReflection'
-import Multimedia from './Multimedia'
-import Conclusion from './Conclusion'
-import References from './References'
+import { useState } from "react";
+import "./App.css";
+import Sidebar from "./sidebar";
+import Homepage from "./Homepage";
+import UnderstandingGenderRoles from "./UnderstandingGenderRoles";
+import HistoricalPerspective from "./HistoricalPerspective";
+import ContemporaryGenderRoles from "./ContemporaryGenderRoles";
+import GenderIssues from "./GenderIssues";
+import AnalysisReflection from "./AnalysisReflection";
+import Multimedia from "./Multimedia";
+import Conclusion from "./Conclusion";
+import References from "./References";
 
-function App() {
-  const [activePage, setActivePage] = useState('Homepage')
+const PAGE_COMPONENTS = [
+  Homepage,
+  UnderstandingGenderRoles,
+  HistoricalPerspective,
+  ContemporaryGenderRoles,
+  GenderIssues,
+  AnalysisReflection,
+  Multimedia,
+  Conclusion,
+  References,
+];
 
-  const renderContent = () => {
-    switch (activePage) {
-      case 'Homepage':
-        return <Homepage />
-      case 'UnderstandingGenderRoles':
-        return <UnderstandingGenderRoles />
-      case 'HistoricalPerspective':
-        return <HistoricalPerspective />
-      case 'ContemporaryGenderRoles':
-        return <ContemporaryGenderRoles />
-      case 'GenderIssues':
-        return <GenderIssues />
-      case 'AnalysisReflection':
-        return <AnalysisReflection />
-      case 'Multimedia':
-        return <Multimedia />
-      case 'Conclusion':
-        return <Conclusion />
-      case 'References':
-        return <References />
-      default:
-        return <div><h2>Page Not Found</h2></div>
-    }
-  }
+export default function App() {
+  const [activePage, setActivePage] = useState(0);
+  const ActivePage = PAGE_COMPONENTS[activePage];
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', margin: 0, padding: 0 }}>
+    <div className="layout">
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
-      
-      <div style={{ flex: 1, padding: '40px', overflowY: 'auto' }}>
-        {renderContent()}
-      </div>
+      <main>
+        <ActivePage setActivePage={setActivePage} />
+      </main>
     </div>
-  )
+  );
 }
-
-export default App
