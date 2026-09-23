@@ -18,7 +18,9 @@ export default function Homepage({ setActivePage }) {
             "Loui Jay Legatuna",
             "Arvin Clark Mediante",
             "Stephanie Nabor",
+            "Rhiza Mae Dacutanan",
             "Lee Conarco",
+            
           ].map((name) => (
             <li key={name}>
               <span className="avatar">
