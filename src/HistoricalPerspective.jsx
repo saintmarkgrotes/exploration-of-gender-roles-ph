@@ -5,7 +5,7 @@ const events = [
   {
     year: "Pre-colonial",
     title: "Egalitarian societies, women as spiritual leaders",
-    text: "Historical accounts describe relatively egalitarian barangay societies where women could own property, divorce, and lead as chieftains. Women dominated the babaylan class — healers and spiritual leaders — and some babaylan were transfeminine.",
+    text: "Historical accounts describe relatively egalitarian barangay societies where women could own property, divorce, and lead as chieftains. Women dominated the babaylan class healers and spiritual leaders and some babaylan were transfeminine.",
   },
   {
     year: "1521–1898",
@@ -20,7 +20,7 @@ const events = [
   {
     year: "1946–present",
     title: "Independence to contemporary Philippines",
-    text: "Legal reforms — including the 1987 Constitution's equality clause and the 2009 Magna Carta of Women — formalized gender equality, even as cultural expectations continue to evolve.",
+    text: "Legal reforms including the 1987 Constitution's equality clause and the 2009 Magna Carta of Women formalized gender equality, even as cultural expectations continue to evolve.",
   },
 ];
 
