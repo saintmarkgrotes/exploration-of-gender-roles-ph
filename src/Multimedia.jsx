@@ -1,12 +1,17 @@
 import PageLayout from "./PageLayout";
 import VideoEmbed from "./VideoEmbed";
 
+import babaylanLeadership from "./assets/pic1.jpg";
+import babaylanAlchemy from "./assets/pic2.jpg";
+import babaylansGroup from "./assets/pic3.webp";
+import tradeShoreline from "./assets/pic4.jpg";
+
 export default function Multimedia({ setActivePage }) {
   return (
     <PageLayout
       index={6}
       kicker="Section 7"
-      lede="Visuals and video that support — not just decorate — the content."
+      lede="Images and video that give a face to the babaylan and the gender-fluid roles they held in precolonial Philippine society."
       setActivePage={setActivePage}
     >
       <section className="block">
@@ -21,36 +26,27 @@ export default function Multimedia({ setActivePage }) {
       <section className="block">
         <h3>Images</h3>
         <p>
-          Add your own historical and contemporary images here. For
-          copyright-safe options, search{" "}
-          <a href="https://commons.wikimedia.org/wiki/Category:Philippines" target="_blank" rel="noreferrer">
-            Wikimedia Commons — Philippines
-          </a>{" "}
-          or the{" "}
-          <a href="https://nhcp.gov.ph/" target="_blank" rel="noreferrer">
-            National Historical Commission of the Philippines
-          </a>{" "}
-          for public-domain and government photos.
+          Two visual representations of the babaylan, showing their important roles as spiritual leaders, healers, 
+          and respected figures in precolonial Filipino communities. 
+          The images also show the traditional appearance and cultural significance of the babaylan.
         </p>
         <div className="gallery">
           <figure>
-            <div className="media-slot" style={{ margin: 0, height: 150, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              Image 1
-            </div>
-            <figcaption>Caption + source</figcaption>
+            <img
+              src={babaylanLeadership}
+              alt="Illustration of babaylan women in ceremonial dress"
+              style={{ width: "100%", height: 220, objectFit: "cover", objectPosition: "center 20%" }}
+            />
+            <figcaption>Babaylan women held leadership and ritual authority in precolonial communities. Source: Rising Filipinas.</figcaption>
           </figure>
           <figure>
-            <div className="media-slot" style={{ margin: 0, height: 150, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              Image 2
-            </div>
-            <figcaption>Caption + source</figcaption>
-          </figure>
-          <figure>
-            <div className="media-slot" style={{ margin: 0, height: 150, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              Image 3
-            </div>
-            <figcaption>Caption + source</figcaption>
-          </figure>
+            <img
+              src={babaylanAlchemy}
+              alt="Illustration of a babaylan preparing herbal remedies over a fire"
+              style={{ width: "100%", height: 220, objectFit: "cover", objectPosition: "center 25%" }}
+            />
+            <figcaption>“Alchemy of a Babaylan,” digital illustration by Gromyko. Source: DeviantArt.</figcaption>
+             </figure>
         </div>
       </section>
     </PageLayout>
