@@ -20,11 +20,12 @@ export default function Sidebar({ activePage, setActivePage }) {
           <div className="name">Exploration of Gender Roles</div>
         </div>
       </div>
-      <nav className="menu">
+      <nav className="menu" aria-label="Report sections">
         {PAGES.map((title, i) => (
           <button
             key={title}
             className={activePage === i ? "active" : ""}
+            aria-current={activePage === i ? "page" : undefined}
             onClick={() => setActivePage(i)}
           >
             <span className="num">{i + 1}</span>

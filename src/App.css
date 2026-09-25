@@ -144,3 +144,17 @@ main{flex:1; min-width:0;}
   .page{padding:34px 22px 60px;}
   .members{grid-template-columns:1fr;}
 }
+
+/* Accessibility: visible focus ring for keyboard users */
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--pine); outline-offset:2px; border-radius:4px;
+}
+
+/* Print / PDF export: hide chrome, let content flow as a plain document */
+@media print{
+  .sidebar, .page-nav, .progress{display:none !important;}
+  .layout{display:block;}
+  .page{max-width:none; padding:0; page-break-after:always;}
+  body{background:#fff;}
+  a{color:inherit; text-decoration:underline;}
+}
