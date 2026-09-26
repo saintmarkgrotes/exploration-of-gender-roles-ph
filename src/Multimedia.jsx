@@ -3,8 +3,7 @@ import VideoEmbed from "./VideoEmbed";
 
 import babaylanLeadership from "./assets/pic1.jpg";
 import babaylanAlchemy from "./assets/pic2.jpg";
-import babaylansGroup from "./assets/pic3.webp";
-import tradeShoreline from "./assets/pic4.jpg";
+
 
 export default function Multimedia({ setActivePage }) {
   return (

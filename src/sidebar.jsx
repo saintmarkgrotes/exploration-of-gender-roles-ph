@@ -15,9 +15,9 @@ const BUTTON_BASE =
 
 export default function Sidebar({ activePage, setActivePage }) {
   return (
-    <aside className="sidebar shrink-0 w-full md:w-[264px] bg-side text-side-text py-4 md:py-6 sticky top-0 md:h-screen overflow-x-auto md:overflow-y-auto md:overflow-x-visible z-10 shadow-md md:shadow-none">
+    <aside className="sidebar shrink-0 w-full md:w-66 bg-side text-side-text py-4 md:py-6 sticky top-0 md:h-screen overflow-x-auto md:overflow-y-auto md:overflow-x-visible z-10 shadow-md md:shadow-none">
       <div className="brand flex items-start gap-3 border-b border-white/10 px-4 md:px-5 pb-4 md:pb-5 mb-2 md:mb-3">
-        <div className="mark shrink-0 w-8 h-8 mt-0.5 rounded-lg bg-gradient-to-br from-pine-dim to-pine flex items-center justify-center font-serif text-[#efe9d8] text-[15px] font-semibold shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12)]">
+        <div className="mark shrink-0 w-8 h-8 mt-0.5 rounded-lg bg-linear-to-br from-pine-dim to-pine flex items-center justify-center font-serif text-[#efe9d8] text-[15px] font-semibold shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12)]">
           7
         </div>
         <div>

@@ -13,7 +13,7 @@ export default class ErrorBoundary extends Component {
   render() {
     if (this.state.error) {
       return (
-        <div className="p-10 max-w-[640px] mx-auto my-[60px] font-sans">
+        <div className="p-10 max-w-160 mx-auto my-15 font-sans">
           <h2 className="font-serif">
             Something broke while rendering this page
           </h2>
