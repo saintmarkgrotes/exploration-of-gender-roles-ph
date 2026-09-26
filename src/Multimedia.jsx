@@ -34,7 +34,7 @@ export default function Multimedia({ setActivePage }) {
             <img
               src={babaylanLeadership}
               alt="Illustration of babaylan women in ceremonial dress"
-              className="block w-full h-[220px] object-cover object-[center_20%]"
+              className="block w-full h-55 object-cover object-[center_20%]"
             />
             <figcaption className="px-3 py-2.5 text-[12.5px] text-ink-faint leading-relaxed">Babaylan women held leadership and ritual authority in precolonial communities. Source: Rising Filipinas.</figcaption>
           </figure>
@@ -42,7 +42,7 @@ export default function Multimedia({ setActivePage }) {
             <img
               src={babaylanAlchemy}
               alt="Illustration of a babaylan preparing herbal remedies over a fire"
-              className="block w-full h-[220px] object-cover object-[center_25%]"
+              className="block w-full h-55 object-cover object-[center_25%]"
             />
             <figcaption className="px-3 py-2.5 text-[12.5px] text-ink-faint leading-relaxed">“Alchemy of a Babaylan,” digital illustration by Gromyko. Source: DeviantArt.</figcaption>
              </figure>
