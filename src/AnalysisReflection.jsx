@@ -8,8 +8,8 @@ export default function AnalysisReflection({ setActivePage }) {
       lede="The group's own critical analysis, grounded in credible evidence."
       setActivePage={setActivePage}
     >
-      <section className="block">
-        <h3>Then vs. Now</h3>
+      <section className="block mt-9 pt-0 border-t-0">
+        <h3 className="text-[19px] mb-3">Then vs. Now</h3>
         <p>
           Pre-colonial Filipino society gave women religious authority and
           property rights that many contemporary societies did not have at
@@ -22,8 +22,8 @@ export default function AnalysisReflection({ setActivePage }) {
         </p>
       </section>
 
-      <section className="block">
-        <h3>What Changed, What Hasn't</h3>
+      <section className="block mt-10 pt-8 border-t border-line-soft">
+        <h3 className="text-[19px] mb-3">What Changed, What Hasn't</h3>
         <p>
           What changed: legal protections now exist that didn't in earlier
           eras the 1987 Constitution, the Magna Carta of Women (2009), and
@@ -40,8 +40,8 @@ export default function AnalysisReflection({ setActivePage }) {
         </p>
       </section>
 
-      <section className="block">
-        <h3>Impact</h3>
+      <section className="block mt-10 pt-8 border-t border-line-soft">
+        <h3 className="text-[19px] mb-3">Impact</h3>
         <p>
           The gap between the Philippines' strong global ranking and the
           lived statistics we found a wage gap, underrepresentation in

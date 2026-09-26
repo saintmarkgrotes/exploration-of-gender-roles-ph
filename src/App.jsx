@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import ErrorBoundary from "./ErrorBoundary";
 import Sidebar, { PAGES } from "./sidebar";
 import Homepage from "./Homepage";
@@ -51,9 +50,9 @@ export default function App() {
 
   return (
     <ErrorBoundary>
-      <div className="layout">
+      <div className="layout flex flex-col md:flex-row min-h-screen">
         <Sidebar activePage={activePage} setActivePage={setActivePage} />
-        <main>
+        <main className="flex-1 min-w-0">
           <ErrorBoundary key={activePage}>
             <ActivePage setActivePage={setActivePage} />
           </ErrorBoundary>

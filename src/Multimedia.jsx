@@ -14,8 +14,8 @@ export default function Multimedia({ setActivePage }) {
       lede="Images and video that give a face to the babaylan and the gender-fluid roles they held in precolonial Philippine society."
       setActivePage={setActivePage}
     >
-      <section className="block">
-        <h3>Video</h3>
+      <section className="block mt-9 pt-0 border-t-0">
+        <h3 className="text-[19px] mb-3">Video</h3>
         <VideoEmbed
           videoId="I6xuJu7gLe0"
           title="The gender-fluid history of the Philippines — France Villarta, TED"
@@ -23,29 +23,29 @@ export default function Multimedia({ setActivePage }) {
         />
       </section>
 
-      <section className="block">
-        <h3>Images</h3>
+      <section className="block mt-10 pt-8 border-t border-line-soft">
+        <h3 className="text-[19px] mb-3">Images</h3>
         <p>
           Two visual representations of the babaylan, showing their important roles as spiritual leaders, healers, 
           and respected figures in precolonial Filipino communities. 
           The images also show the traditional appearance and cultural significance of the babaylan.
         </p>
-        <div className="gallery">
-          <figure>
+        <div className="gallery grid grid-cols-1 sm:grid-cols-2 gap-4 my-5">
+          <figure className="m-0 border border-line rounded-md overflow-hidden bg-paper-dim shadow-sm">
             <img
               src={babaylanLeadership}
               alt="Illustration of babaylan women in ceremonial dress"
-              style={{ width: "100%", height: 220, objectFit: "cover", objectPosition: "center 20%" }}
+              className="block w-full h-[220px] object-cover object-[center_20%]"
             />
-            <figcaption>Babaylan women held leadership and ritual authority in precolonial communities. Source: Rising Filipinas.</figcaption>
+            <figcaption className="px-3 py-2.5 text-[12.5px] text-ink-faint leading-relaxed">Babaylan women held leadership and ritual authority in precolonial communities. Source: Rising Filipinas.</figcaption>
           </figure>
-          <figure>
+          <figure className="m-0 border border-line rounded-md overflow-hidden bg-paper-dim shadow-sm">
             <img
               src={babaylanAlchemy}
               alt="Illustration of a babaylan preparing herbal remedies over a fire"
-              style={{ width: "100%", height: 220, objectFit: "cover", objectPosition: "center 25%" }}
+              className="block w-full h-[220px] object-cover object-[center_25%]"
             />
-            <figcaption>“Alchemy of a Babaylan,” digital illustration by Gromyko. Source: DeviantArt.</figcaption>
+            <figcaption className="px-3 py-2.5 text-[12.5px] text-ink-faint leading-relaxed">“Alchemy of a Babaylan,” digital illustration by Gromyko. Source: DeviantArt.</figcaption>
              </figure>
         </div>
       </section>

@@ -8,8 +8,8 @@ export default function UnderstandingGenderRoles({ setActivePage }) {
       lede="What gender roles are, how they differ from biological sex, and why studying them matters."
       setActivePage={setActivePage}
     >
-      <section className="block">
-        <h3>Definition and Explanation</h3>
+      <section className="block mt-9 pt-0 border-t-0">
+        <h3 className="text-[19px] mb-3">Definition and Explanation</h3>
         <p>
           Gender roles are socially constructed expectations and norms that dictate how
           individuals should behave, dress, and present themselves based on their
@@ -17,8 +17,8 @@ export default function UnderstandingGenderRoles({ setActivePage }) {
         </p>
       </section>
 
-      <section className="block">
-        <h3>Gender Roles vs. Biological Sex</h3>
+      <section className="block mt-10 pt-8 border-t border-line-soft">
+        <h3 className="text-[19px] mb-3">Gender Roles vs. Biological Sex</h3>
         <p>
           While biological sex refers to the objective physical, genetic, and physiological
           attributes (such as chromosomes and anatomy) that categorize individuals as male,
@@ -27,8 +27,8 @@ export default function UnderstandingGenderRoles({ setActivePage }) {
         </p>
       </section>
 
-      <section className="block">
-        <h3>Importance of Studying Gender Roles</h3>
+      <section className="block mt-10 pt-8 border-t border-line-soft">
+        <h3 className="text-[19px] mb-3">Importance of Studying Gender Roles</h3>
         <p>
           Studying gender roles is crucial for recognizing and challenging systemic
           inequalities. It helps us understand how societal structures can limit individual

@@ -33,7 +33,7 @@ export default function HistoricalPerspective({ setActivePage }) {
       setActivePage={setActivePage}
     >
       <Timeline events={events} />
-      <p style={{ fontSize: 13.5, color: "var(--ink-soft)" }}>
+      <p className="text-[13.5px] text-ink-soft">
         Sources: see the References section for the scholarly and TED Talk
         sources behind this timeline.
       </p>

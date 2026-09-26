@@ -35,11 +35,11 @@ export default function References({ setActivePage }) {
       lede="All sources used, properly acknowledged. Search these titles on Google Scholar to verify and read further."
       setActivePage={setActivePage}
     >
-      <ol className="refs">
+      <ol className="refs list-decimal marker:text-pine marker:font-semibold pl-5 text-[14.5px] text-ink-soft space-y-2.5">
         {refs.map((r) => (
-          <li key={r.url}>
+          <li key={r.url} className="leading-relaxed pl-1.5">
             {r.text}{" "}
-            <a href={r.url} target="_blank" rel="noreferrer">
+            <a href={r.url} target="_blank" rel="noreferrer" className="break-words">
               {r.url}
             </a>
           </li>
